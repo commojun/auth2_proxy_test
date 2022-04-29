@@ -1,0 +1,2 @@
+# auth2_proxy_test
+auth2_prixyの動作テストのためのプロジェクト
