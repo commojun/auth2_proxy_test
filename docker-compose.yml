@@ -6,7 +6,10 @@ services:
       - 8891:8891
     restart: always
     volumes:
-      - ./conf/:/etc/nginx/conf.d/:ro
+      - ./conf/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./conf/auth/:/etc/nginx/auth/:ro
+      - ./oauth2_proxy.conf:/oauth2_proxy.conf:ro
+      - ./authenticated_emails:/authenticated_emails:ro
     logging:
       options:
         max-size: "10m"

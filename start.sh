@@ -1,4 +1,4 @@
 #!/bin/bash
 
 nginx
-oauth2_proxy -config=/etc/nginx/oauth2_proxy.cfg
+oauth2-proxy --config /oauth2_proxy.conf
